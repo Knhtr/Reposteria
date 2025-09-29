@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins:wght@400;500;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    background: #ffe0d6;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    color: #216852;
+    transition: all 0.3s ease;
+}
+
+.swiper-button-prev:hover{
+    transform: scale(1.05);
+    color:#174939;
+}
+
+.swiper-button-next:hover{
+    transform: scale(1.05);
+    color:#174939;
+}
+
+.inicio {
+    overflow: hidden;
+    background: url('src/assets/fondoCakes.png') no-repeat;
+    background-size: 100%;
+    background-position: center top;
+}
+
+.contenido {
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.contenido h1 {
+    font-family: 'Fredoka One', sans-serif;
+    font-size: 3.8rem;
+    font-weight: 700;
+    display: inline-block;
+    margin: 0 0.3rem;
+    transform: translate(5%, 120%);
+}
+
+.contenido h2 {
+    font-family: 'Fredoka One', sans-serif;
+    font-size: 3.8rem;
+    font-weight: 700;
+    display: inline-block;
+    margin: 0 0.3rem;
+    transform: translate(25%, 460%);
+}
+
+.contenido h1.green {
+    font-family: 'Fredoka One', sans-serif;
+    font-size: 3.8rem;
+    font-weight: 700;
+    color: #216852;
+    display: inline-block;
+    margin-right: 0.5rem;
+}
+
+.contenido h2.orange {
+    font-family: 'Fredoka One', sans-serif;
+    font-size: 3.8rem;
+    font-weight: 700;
+    color: #e4572e;
+    display: inline-block;
+}
+
+.contenido p {
+    font-size: 1rem;
+    line-height: 2;
+    color: #666;
+    max-width: 24%;
+    margin: 1rem auto;
+    text-align: left;
+    transform: translate(80%, 345%);
+}
+
+.contenido1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+.contenido1 > div {
+    background: #fee6d8;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 4rem 3rem;
+    max-width: 750px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.contenido1 img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 15px;
+    flex-shrink: 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contenido1 .text-content {
+    flex: 1;
+}
+
+.contenido1 h1 {
+    font-family: 'Fredoka One', cursive;
+    font-size: 2.2rem;
+    color: #e4572e;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.contenido1 p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+    margin: 0;
+}
+
+.contenido1.card2 > div {
+    background: #216852;
+    max-width: 750px;
+}
+
+.contenido1.card2 h1 {
+    color: rgb(206, 59, 59);
+}
+
+.contenido1.card2 p {
+    color: white;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contenido1 > div {
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem;
+        gap: 1.5rem;
+    }
+    
+    .contenido1 img {
+        width: 250px;
+        height: 200px;
+    }
+    
+    .contenido1 h1 {
+        font-size: 1.8rem;
+    }
+}
+
+.button {
+    display: inline-block;
+    background: #e4572e;
+    color: #fff;
+    font-weight: 600;
+    padding: 0.5rem 2rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    margin: 20rem 0 0 19rem;
+    text-align: center;
+}
+
+.button:hover {
+    background: #c63e1b;
+    transform: scale(1.05);
+}
+
+.signature {
+    padding-top: 10%;
+    padding-bottom: 5rem;
+}
+
+.signature h2 {
+    font-family: 'Fredoka One', sans-serif;
+    font-size: 2.2rem;
+    color: #e4572e;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.cards div {
+    border-radius: 20px;
+    padding: 1.5rem 1rem;
+    width: 260px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    max-width: 200px;
+}
+
+.cards div:hover {
+    transform: translateY(-8px);
+}
+
+.cards img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.cards h3 {
+    font-family: 'Fredoka One', sans-serif;
+    font-size: 1rem;
+    margin: 0.5rem 0;
+    color: #216852;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    gap: 0.5rem;
+}
+
+.cards .buttonSign {
+    background: #216852;
+    color: white;
+    font-size: 0.9rem;
+    padding: 0.4rem 0.6rem;
+    border-radius: 8px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background 0.3s ease;
+}
+
+.cards .buttonSign:hover {
+    background: #174939;
+}
+
+.cards h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0.5rem 0;
+    color: #e4572e;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cards p, .cards a[href='#']:last-child {
+    font-size: 0.85rem;
+    color: #888;
+    margin: 0;
+    text-decoration: none;
+}
+
+.cards a[href='#']:last-child:hover {
+    color: #666;
+    text-decoration: underline;
+}
