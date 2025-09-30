@@ -1,0 +1,176 @@
+.products-body {
+    background: white;
+    font-family: 'Poppins', sans-serif;
+    color: #216852;
+}
+
+.first {
+    background: url('src/assets/fondoProducts.png') no-repeat;
+    background-size: 100%;
+    background-position: center top;
+    overflow: hidden;
+}
+
+.order {
+    font-family: 'Fredoka One', sans-serif;
+    color: #e4572e;
+    text-align: center;
+    font-size: 2.2rem;
+    padding-top: 3%;
+    padding-bottom: 5%;
+}
+
+.container {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.card {
+    background: #fff;
+    border-radius: 120px;
+    width: 200px;
+    padding: 3rem 1rem;
+    position: relative;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    flex-direction: column;
+    min-height: 350px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: 'Fredoka One', sans-serif;
+    color: #e4572e;
+    margin-bottom: 0.5rem;
+}
+
+.text {
+    font-size: 0.9rem;
+    color: #216852;
+    max-width: 160px;
+    margin: 0 auto;
+}
+
+.text.bottom {
+    transform: translate(0%, 330%);
+}
+
+.line.bottom {
+    transform: translate(0%, -40%);
+}
+
+.circle {
+    background-color: #216852;
+    font-family: 'Fredoka One', sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: 2.2rem;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.circle.top {
+    top: -30px;
+}
+
+.circle.bottom {
+    bottom: -30px;
+}
+
+.line {
+    position: absolute;
+    top: 175px;
+    bottom: 90px;
+    left: 50%;
+    width: 2px;
+    background-color: #e24d2c;
+    transform: translateX(-50%);
+}
+
+.journal {
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.journal-title {
+    margin-top: 7%;
+    font-size: 2.2rem;
+    font-weight: bold;
+    font-family: 'Fredoka One', sans-serif;
+    color: #e4572e;
+    margin-bottom: 1.5rem;
+}
+
+.journal-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+.btn {
+    padding: 0.6rem 1.2rem;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    background: white;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.btn.active {
+    background: #d94f2a;
+    color: white;
+    border-color: #d94f2a;
+}
+
+.journal-cards {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.journal-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 260px;
+    overflow: hidden;
+    text-align: left;
+}
+
+.journal-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card-text {
+    padding: 1rem;
+}
+
+.card-text h3 {
+    font-size: 1rem;
+    color: #d94f2a;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.card-text p {
+    font-size: 0.9rem;
+    color: #666;
+}

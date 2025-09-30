@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins:wght@400;500;600&display=swap');
 
-body {
+.home-body {
     font-family: 'Poppins', sans-serif;
-    color: #333;
+    color: #216852;
     background: #ffe0d6;
 }
 
@@ -72,7 +72,7 @@ body {
 .contenido p {
     font-size: 1rem;
     line-height: 2;
-    color: #666;
+    color: #216852;
     max-width: 24%;
     margin: 1rem auto;
     text-align: left;
@@ -142,7 +142,6 @@ body {
     color: white;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
     .contenido1 > div {
         flex-direction: column;
@@ -261,12 +260,12 @@ body {
 
 .cards p, .cards a[href='#']:last-child {
     font-size: 0.85rem;
-    color: #888;
+    color: #4c8372;
     margin: 0;
     text-decoration: none;
 }
 
 .cards a[href='#']:last-child:hover {
-    color: #666;
+    color: #216852;
     text-decoration: underline;
 }

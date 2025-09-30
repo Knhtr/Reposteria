@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Autoplay, Navigation } from "swiper/modules";
@@ -10,8 +11,12 @@ import vaniila from "../../assets/vanilla.png";
 import './Home.css';
 
 function Home() {
+    useEffect(() => {
+        document.body.className = "home-body";
+        return () => (document.body.className = "");
+    }, []);
     return (
-    <>
+    <section className="body">
         <section className="inicio">
             <Swiper
             modules={[Navigation, Autoplay]}
@@ -77,7 +82,7 @@ function Home() {
                 </div>
             </div>
         </section>
-    </>
+    </section>
     )
 }
 
