@@ -1,5 +1,9 @@
 import { useEffect } from "react";
+import birthday from "../../assets/birthday.jpeg";
+import blue from "../../assets/blue.jpeg";
+import pastel from "../../assets/pastel.jpeg";
 import './Productos.css';
+
 
 function Productos() {
     useEffect(() => {
@@ -43,30 +47,30 @@ function Productos() {
         <section className="journal">
             <h2 className="journal-title">Cake Journal</h2>
             <div className="journal-buttons">
-                <button className="btn">Tips & Trick</button>
-                <button className="btn active">New Article</button>
-                <button className="btn">Promotions</button>
+                <div className="btn">Tips & Trick</div>
+                <div className="btn active">New Article</div>
+                <div className="btn">Promotions</div>
             </div>
             <div className="journal-cards">
                 <div className="journal-card">
-                    <img src="/img/cake1.jpg" alt="Cake" />
+                    <img src={pastel} alt="Cake" />
                     <div className="card-text">
                         <h3>Our Favorite Cakes that Always Make it To the Best Seller</h3>
-                        <p>Read More</p>
+                        <a href='#'>More Details</a>
                     </div>
                 </div>
                 <div className="journal-card">
-                    <img src="/img/cake2.jpg" alt="Cake" />
+                    <div className="imagen"><img src={birthday} alt="Cake" /></div>
                     <div className="card-text">
                         <h3>Designing Your Own Customized Dream Birthday Cake</h3>
-                        <p>Read More</p>
+                        <a href='#'>More Details</a>
                     </div>
                 </div>
                 <div className="journal-card">
-                    <img src="/img/cake3.jpg" alt="Cake" />
+                    <img src={blue} alt="Cake" />
                     <div className="card-text">
                         <h3>Choosing the Right Cake for Any Occasion and Party: A Guide</h3>
-                        <p>Read More</p>
+                        <a href='#'>More Details</a>
                     </div>
                 </div>
             </div>

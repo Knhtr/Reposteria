@@ -258,7 +258,7 @@
     justify-content: space-between;
 }
 
-.cards p, .cards a[href='#']:last-child {
+.cards a[href='#']:last-child {
     font-size: 0.85rem;
     color: #4c8372;
     margin: 0;
