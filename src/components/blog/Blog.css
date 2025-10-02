@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins:wght@400;500;600&display=swap');
+
+.blog-body {
+    background: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.start {
+    background: url('src/assets/fondoBlog.png') no-repeat;
+    background-size: 100%;
+    background-position: center top;
+    overflow: hidden;
+}
+
+.contenedoras {
+    max-width: 260px;
+    padding: 1rem 1.5rem;
+    border-radius: 15px;
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    position: absolute;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    transition: transform 0.3s ease;
+}
+
+.cont1 {
+    transform: translate(280%, 120%);
+}
+
+.cont1:hover{
+    transform: translate(280%, 120%) translateY(-8px);
+}
+
+.cont2 {
+    bottom: 20%;
+    left: 12%;
+}
+
+.cont2:hover{
+    transform: translateY(-8px);
+}
+
+.contenedoras p {
+    margin: 0 0 0.5rem 0;
+    color: #ff8aad;
+}
+
+.contenedoras h4 {
+    margin: 0;
+    font-weight: 600;
+    color: #ff4b81;
+    font-size: 0.85rem;
+}
+
+.choise {
+    margin-left: 7%;
+    margin-top: 50%;
+    text-align: left;
+    max-width: 700px;
+    position: relative;
+}
+
+.choise h2 {
+    font-size: 2.2rem;
+    font-weight: bold;
+    font-family: 'Fredoka One', sans-serif;
+    color: #e4572e;
+    margin: 0;
+}
+
+.choise p {
+    font-size: 1rem;
+    margin: 1rem 0;
+    line-height: 1.6;
+    max-width: 550px;
+    color: #216852;
+}
+
+.choise img {
+    position: absolute;
+    right: -60%;
+    top: -19%;
+    width: 56%;
+}
+
+button, .etiquetas {
+    display: inline-block;
+    margin: 10px 8px 0 0;
+    padding: 0.6rem 1.2rem;
+    font-size: 0.85rem;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.etiquetas {
+    background: #216852;
+    color: white;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.etiquetas.uno{
+    background-color: white;
+    color:#216852;
+    border: 2px solid #216852;
+}
+
+.etiquetas:hover {
+    transform: translateY(-8px);
+}
