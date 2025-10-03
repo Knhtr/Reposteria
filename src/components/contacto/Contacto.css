@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins:wght@400;500;600&display=swap');
+
+.contacto-body {
+    background: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.intro {
+    background: url('src/assets/fondoCont.png') no-repeat;
+    background-size: 100%;
+    background-position: center top;
+    overflow: hidden;
+}
+
+.contImg img {
+    bottom: 1%;
+    position: absolute;
+    width: 35%;
+    border-radius: 30%;
+    margin-left: 3%;
+}
+
+.ready {
+    margin-left: 50%;
+    margin-top: 14%;
+}
+
+.ready h2 {
+    max-width: 50%;
+    color: #d94f3c;
+    margin-bottom: 1rem;
+    font-size: 2.2rem;
+    font-weight: bold;
+    font-family: 'Fredoka One', sans-serif;
+}
+
+.ready p {
+    max-width: 80%;
+    font-size: 1rem;
+    color: #216852;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.taste {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    max-width: 480px;
+    margin-left: 50%;
+}
+
+.taste input {
+    flex: 1;
+    padding: 0.9rem 1.2rem;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    font-size: 0.95rem;
+    outline: none;
+    background: #fff;
+    color: #333;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.taste input::placeholder {
+    color: #9b9b9b;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.taste input:focus {
+    border: 2px solid #154c42;
+    box-shadow: 0 4px 12px rgba(21, 76, 66, 0.2);
+}
+
+.taste input:focus::placeholder {
+    color: #c7c7c7;
+}
+
+.taste button {
+    background: #154c42;
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 999px;
+    padding: 0.7rem 1.6rem;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+.taste button:hover {
+    background: #0d3630;
+    transform: translateY(-2px);
+}
+
+.taste button:active {
+    transform: scale(0.95);
+}
+
+.footer {
+    margin-top: 13%;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 2rem;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-left: 2rem;
+}
+
+.footer-logo h2 {
+    font-family: 'Fredoka One', cursive;
+    font-size: 2rem;
+}
+
+.footer-logo img {
+    width: 25%;
+}
+
+.footer-logo span {
+    color: #ffdd55;
+}
+
+.footer-logo p {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+}
+
+.footer-links {
+    display: flex;
+    gap: 3rem;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-right: 2rem;
+    margin-bottom: 0.7rem;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+.footer-links li:hover {
+    text-decoration: underline;
+}

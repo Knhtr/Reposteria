@@ -4,10 +4,7 @@ import "swiper/css/navigation";
 import { Autoplay, Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import cake from "../../assets/cake.jpeg";
-import choco from "../../assets/choco.png";
-import mousse from "../../assets/mousse.png";
 import postres from "../../assets/postres.jpeg";
-import vaniila from "../../assets/vanilla.png";
 import './Home.css';
 
 function Home() {
@@ -61,26 +58,6 @@ function Home() {
                 </div>
             </SwiperSlide>
             </Swiper>
-            <div className="signature">
-                <h2>Our Signature</h2>
-                <div className="cards">
-                    <div className="card1">
-                        <img src={choco} alt="Chips" className="chips"/>
-                        <h3>Descendant Choco Chips <a href="#" className="buttonSign">🛍️</a></h3>
-                        <h4>$15 <a href='#'>More Details</a></h4>
-                    </div>
-                    <div className="card2">
-                        <img src={vaniila} alt="Vanilla" className="vanilla"/>
-                        <h3>Classic Vanilla Chiffon Cake <a href="#" className="buttonSign">🛍️</a></h3>
-                        <h4>$25 <a href='#'>More Details</a></h4>
-                    </div>
-                    <div className="card3">
-                        <img src={mousse} alt="Mousse" className="mousse"/>
-                        <h3>Choco Mousse Extravaganza <a href="#" className="buttonSign">🛍️</a></h3>
-                        <h4>$35 <a href='#'>More Details</a></h4>
-                    </div>
-                </div>
-            </div>
         </section>
     </section>
     )

@@ -1,82 +1,75 @@
 import { useEffect } from "react";
-import birthday from "../../assets/birthday.jpeg";
-import blue from "../../assets/blue.jpeg";
-import pastel from "../../assets/pastel.jpeg";
+import avellana from "../../assets/avellana.png";
+import caramelo from "../../assets/caramelo.png";
+import choco from "../../assets/choco.png";
+import chocolate from "../../assets/chocolate.png";
+import fresa from "../../assets/fresa.png";
+import limon from "../../assets/limon.png";
+import mango from "../../assets/mango.png";
+import mousse from "../../assets/mousse.png";
+import vanilla from "../../assets/vanilla.png";
 import './Productos.css';
-
 
 function Productos() {
     useEffect(() => {
-        document.body.className = "products-body";
-        return () => (document.body.className = "");
+            document.body.className = "products-body";
+            return () => (document.body.className = "");
     }, []);
     return (
-    <section className='primero'>
-        <div className='first'>
-            <h2 className="order">How to Order</h2>
-            <section class="container">
-                <div class="card">
-                    <h3 class="title">Choose</h3>
-                    <p class="text">Pick your favorite cake flavor and design.</p>
-                    <div class="line"></div>
-                    <div class="circle bottom">1</div>
+        <div className="signature">
+            <h2>Our Signature</h2>
+            <div className="cards">
+                <div className="card1">
+                    <img src={choco} alt="Chips" className="chips"/>
+                    <h3>Descendant Choco Chips <a href="#" className="buttonSign">🛍️</a></h3>
+                    <h4>$15 <a href='#'>More Details</a></h4>
                 </div>
-                <div class="card">
-                    <div class="circle top">2</div>
-                    <div className='text bottom'>
-                        <h3 class="title">Customize</h3>
-                        <p class="text">Add personal touches and special requests.</p>
-                    </div>
-                    <div class="line bottom"></div>
+                <div className="card2">
+                    <img src={vanilla} alt="Vanilla" className="vanilla"/>
+                    <h3>Classic Vanilla Chiffon Cake <a href="#" className="buttonSign">🛍️</a></h3>
+                    <h4>$25 <a href='#'>More Details</a></h4>
                 </div>
-                <div class="card">
-                    <h3 class="title">Order</h3>
-                    <p class="text">Place and pay your order via online.</p>
-                    <div class="line"></div>
-                    <div class="circle bottom">3</div>
+                <div className="card3">
+                    <img src={mousse} alt="Mousse" className="mousse"/>
+                    <h3>Choco Mousse Extravaganza <a href="#" className="buttonSign">🛍️</a></h3>
+                    <h4>$35 <a href='#'>More Details</a></h4>
                 </div>
-                <div class="card">
-                    <div class="circle top">4</div>
-                    <div className='text bottom'>
-                        <h3 class="title">Wait</h3>
-                        <p class="text">Your cake will be delivered right to you.</p>
-                    </div>
-                    <div class="line bottom"></div>
+            </div>
+            <div className="cards">
+                <div className="card1">
+                    <img src={caramelo} alt="Caramelo" className="caramelo"/>
+                    <h3>Golden Caramel Delight <a href="#" className="buttonSign">🛍️</a></h3>
+                    <h4>$40 <a href='#'>More Details</a></h4>
                 </div>
-            </section>
-            <section className="journal">
-                <h2 className="journal-title">Cake Journal</h2>
-                <div className="journal-buttons">
-                    <div className="btn">Tips & Trick</div>
-                    <div className="btn active">New Article</div>
-                    <div className="btn">Promotions</div>
+                <div className="card2">
+                    <img src={fresa} alt="Vanilla" className="vanilla"/>
+                    <h3>Strawberry Bliss Tart <a href="#" className="buttonSign">🛍️</a></h3>
+                    <h4>$50 <a href='#'>More Details</a></h4>
                 </div>
-                <div className="journal-cards">
-                    <div className="journal-card">
-                        <img src={pastel} alt="Cake" />
-                        <div className="card-text">
-                            <h3>Our Favorite Cakes that Always Make it To the Best Seller</h3>
-                            <a href='#'>More Details</a>
-                        </div>
-                    </div>
-                    <div className="journal-card">
-                        <div className="imagen"><img src={birthday} alt="Cake" /></div>
-                        <div className="card-text">
-                            <h3>Designing Your Own Customized Dream Birthday Cake</h3>
-                            <a href='#'>More Details</a>
-                        </div>
-                    </div>
-                    <div className="journal-card">
-                        <img src={blue} alt="Cake" />
-                        <div className="card-text">
-                            <h3>Choosing the Right Cake for Any Occasion and Party: A Guide</h3>
-                            <a href='#'>More Details</a>
-                        </div>
-                    </div>
+                <div className="card3">
+                    <img src={chocolate} alt="Mousse" className="mousse"/>
+                    <h3>Velvet Chocolate Dream <a href="#" className="buttonSign">🛍️</a></h3>
+                    <h4>$25 <a href='#'>More Details</a></h4>
                 </div>
-            </section>
+            </div>
+            <div className="cards">
+                <div className="card1">
+                    <img src={mango} alt="Chips" className="chips"/>
+                    <h3>Tropical Mango Fantasy <a href="#" className="buttonSign">🛍️</a></h3>
+                    <h4>$15 <a href='#'>More Details</a></h4>
+                </div>
+                <div className="card2">
+                    <img src={limon} alt="Vanilla" className="vanilla"/>
+                    <h3>Lemon Zest Cheesecake <a href="#" className="buttonSign">🛍️</a></h3>
+                    <h4>$40 <a href='#'>More Details</a></h4>
+                </div>
+                <div className="card3">
+                    <img src={avellana} alt="Mousse" className="mousse"/>
+                    <h3>Hazelnut Crunch Sensation <a href="#" className="buttonSign">🛍️</a></h3>
+                    <h4>$20 <a href='#'>More Details</a></h4>
+                </div>
+            </div>
         </div>
-    </section>
     )
 }
 
